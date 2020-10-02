@@ -1,0 +1,102 @@
+body {
+  height: 140vh;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 40px;
+  color: #918883;
+
+  background-color: antiquewhite;
+}
+
+a {
+  margin-left: 85.5vh;
+  color: antiquewhite;
+  background-color: #918883;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 40px;
+  transition: all 0.5s cubic-bezier(0.68, 0, 0.265, 1);
+}
+a:hover {
+  border-radius: 36px;
+  color: #918883;
+  background-color: antiquewhite;
+}
+img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+img:hover {
+  transform: rotateY(360deg) scale(1.5);
+}
+header {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+}
+main {
+  width: 180vh;
+  height: 10vh;
+  margin: 0px 110px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+div:active {
+  transform: scale(6);
+}
+#coin {
+  display: flex;
+  justify-content: center;
+  animation: coindance 5s ease-in-out infinite;
+}
+#coin img {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes coindance {
+  0% {
+    transform: rotateY(0);
+  }
+  15% {
+    transform: scale(2.5);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(10px);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: rotateY(0) translateY(0px);
+  }
+}
+#fly {
+  margin: 0px 96.5vh;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: none;
+}
